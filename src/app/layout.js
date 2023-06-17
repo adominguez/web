@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css' />
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css' />
+        <meta name="robots" content="noindex,nofollow" />
       </head>
       <body className={`${inter.className} flex`}>
         <Navigation />
