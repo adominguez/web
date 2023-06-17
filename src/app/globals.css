@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 239, 239, 239;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -24,4 +24,39 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.wp-block-code {
+  background-color: rgb(36, 36, 36);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  max-height: 400px;
+  overflow: auto;
+  padding: .5rem;
+}
+
+.blog-article p, .projects p, .wp-block-separator, .wp-block-code{
+  margin-bottom: 1rem;
+}
+
+.kb-row-layout-id_de9e7e-c3 > .kt-row-column-wrap {
+  width: 100%;
+}
+
+.kb-row-layout-id_de9e7e-c3 .kt-row-column-wrap .kb-gallery-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.kb-row-layout-wrap {
+  background-color: transparent !important;
+}
+
+.kb-row-layout-wrap img {
+  cursor: pointer;
+}
+
+.wp-block-kadence-advancedheading {
+  color: rgb(var(--foreground-rgb))!important
 }
