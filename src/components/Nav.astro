@@ -1,0 +1,30 @@
+---
+import Icon from '@/components/Icon'
+
+const NAV = [
+  {
+    name: 'Home',
+    url: '/',
+    icon: 'Home'
+  },
+  {
+    name: 'Components',
+    url: '/ui-components',
+    icon: 'LayoutGrid'
+  }
+]
+---
+
+<nav class="flex flex-col flex-1">
+  {
+    NAV.map(({ name, url, icon }) => (
+      <a
+        class="flex hover:pl-4 transition-all hover:bg-muted hover:text-muted-foreground p-2 border-b gap-2 items-center"
+        href={url}
+      >
+        <Icon name={icon} size={18} />
+        {name}
+      </a>
+    ))
+  }
+</nav>
